@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -12,18 +12,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}
 
 body {
-  background: var(--background);
+  background-image: url('/images/background.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: sans-serif;
   margin: 20px;
   padding: 0;
 }
@@ -82,33 +84,98 @@ body {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 2px solid #c1c1c1;
   float: left;
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 90px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 90px;
+  font-family: var(--font-nunito);
+}
+
+.x-square {
+  color: #f54d62;
+  font-size: 5rem;
+}
+
+.o-square {
+  color: #87e43a;
+  font-size: 5rem;
+}
+
+.board-row:first-child .square {
+  border-top: none;
+}
+.board-row:last-child .square {
+  border-bottom: none;
+}
+.board-row .square:first-child {
+  border-left: none;
+}
+.board-row .square:last-child {
+  border-right: none;
+}
+
+.board-wrapper {
+  padding: 25px 28px 32px;
+  background: white;
+  border-radius: 20px;
 }
 
 .board-row:after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 
 .status {
   margin-bottom: 10px;
+  font-family: var(--font-montserrat);
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
+
 .game {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.reset-button {
+  margin-left: 15px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #45a049;
 }
