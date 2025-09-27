@@ -1,24 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 Jogo da Velha (Tic Tac Toe)
 
-## Getting Started
+Um jogo da velha moderno construído com tecnologias web modernas. Este projeto demonstra o uso de React com Next.js e TypeScript para criar uma experiência de jogo interativa e responsiva.
 
-First, run the development server:
+## 🚀 Tecnologias
+
+- **React 18** - Biblioteca para construção de interfaces
+- **Next.js 13** - Framework React com renderização do lado do servidor
+- **TypeScript** - Adiciona tipagem estática ao JavaScript
+- **CSS Modules** - Estilização modular e scoped
+
+## 📸 Screenshots
+
+[Screenshots serão adicionados aqui]
+
+## ⚙️ Como Executar
 
 ```bash
+# Clone o repositório
+git clone https://github.com/marksousa/tic-tac-toe-game.git
+
+# Entre na pasta do projeto
+cd tic-tac-toe
+
+# Instale as dependências
+npm install
+
+# Execute o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
